@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Boutique - Occasions</title>
+    <link rel="stylesheet" href="ostyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="c:\Users\Harshini\Downloads\Electic_logo.png" alt="Flower Boutique Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="html.html">Home</a></li>
+                    <li><a href="sflower.html">Our Flowers</a></li>
+                    <li><a href="occasion.html">Occasions</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="cart.html" class="icon cart-icon">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h2>Welcome to Our Flower Boutique</h2>
+        <p>Select from a variety of occasions to find the perfect flowers for your needs!</p>
+
+        <div class="occasion-gallery">
+            <div class="product">
+                <a href="wedding-flowers.html">
+                    <img src="https://i.etsystatic.com/9295131/r/il/9e0fbe/5661725163/il_fullxfull.5661725163_8zb0.jpg" alt="Wedding Day Flowers">
+                    <h3 class="flower-btn">Wedding Flowers</h3>
+                </a>
+            </div>
+            <div class="product">
+                <a href="birthday-flowers.html">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzavIIQ1o5UqpKmgdwoYGK-L8Xs050zQLr4Q&s" alt="Birthday Flowers">
+                    <h3 class="flower-btn">Birthday Flowers</h3>
+                </a>
+            </div>
+            <div class="product">
+                <a href="romantic-flowers.html">
+                    <img src="https://bloombarflowers.com/cdn/shop/files/header.png?v=1687223505" alt="Romantic Flowers">
+                    <h3 class="flower-btn">Romantic Flowers</h3>
+                </a>
+            </div>
+            <div class="product">
+                <a href="autumn-flowers.html">
+                    <img src="https://img.freepik.com/premium-photo/bright-autumn-flowers-bouquet-beauty_124507-15825.jpg" alt="Autumn Flowers">
+                    <h3 class="flower-btn">Autumn Flowers</h3>
+                </a>
+            </div>
+            <div class="product">
+                <a href="valentine-flowers.html">
+                    <img src="https://blacktulipflowers.in/wp-content/uploads/2022/10/Untitled-design-2023-09-11T171758.104.png" alt="Valentine's Day Flowers">
+                    <h3 class="flower-btn">Valentine's Day Flowers</h3>
+                </a>
+            </div>
+            <div class="product">
+                <a href="luxury-flowers.html">
+                    <img src="https://www.floramoments.in/cdn/shop/files/product24.png?v=1714117962" alt="Luxury Flowers">
+                    <h3 class="flower-btn">Luxury Flowers</h3>
+                </a>
+            </div>
+        </div>
+    </main>
+    <script>
+        // JavaScript to handle cart functionality
+        const cartButtons = document.querySelectorAll('.add-to-cart');
+        const cartIcon = document.querySelector('.cart-icon');
+        let cartCount = 0;
+
+        cartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                cartCount++;
+                alert('Item added to cart! Total items in cart: ' + cartCount);
+
+                // Add the animation class for the bounce effect
+                cartIcon.classList.add('clicked');
+
+                // Remove the animation class after the animation is done
+                setTimeout(() => {
+                    cartIcon.classList.remove('clicked');
+                }, 500); // Duration matches the animation duration in CSS
+            });
+        });
+    </script>
+</body>
+</html>

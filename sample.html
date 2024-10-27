@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Boutique - Our Flowers</title>
+    <link rel="stylesheet" href="samples.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="c:\Users\Harshini\Downloads\Electic_logo.png" alt="Flower Boutique Logo" class="logo">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="html.html">Home</a></li>
+                    <li><a href="sflower.html">Our Flowers</a></li>
+                    <li><a href="occasion.html">Occasions</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="cart.html" class="icon cart-icon">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="featured-flowers" id="our-flowers">
+            <h2>Our Featured Flowers</h2>
+            <div class="flower-container">
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=500&auto=format&fit=crop&q=60" alt="Luxury Roses">
+                    <h3>Luxury Roses</h3>
+                    <div class="ratings">
+                        <span>⭐⭐⭐⭐</span>
+                        <span>(43 reviews)</span>
+                    </div>
+                    <p>$50</p>
+                    <button class="add-to-cart" data-product="1">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY-Z7jiampxAR5H5vnNtdIRVibIpUAuo770vK4mKMl65__nZHfoDIsOp4A2UGPDk4JWmU" alt="Stunning Tulips">
+                    <h3>Stunning Tulips</h3>
+                    <div class="ratings">
+                        <span>⭐⭐⭐⭐⭐</span>
+                        <span>(20 reviews)</span>
+                    </div>
+                    <p>$30</p>
+                    <button class="add-to-cart" data-product="2">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://www.themaevastore.com/cdn/shop/files/239283286_869615483685170_4337144571176553879_n_86961548035183712.jpg?v=1715460109" alt="Bright Sunflowers">
+                    <h3>Bright Sunflowers</h3>
+                    <div class="ratings">
+                        <span>⭐⭐⭐</span>
+                        <span>(34 reviews)</span>
+                    </div>
+                    <p>$25</p>
+                    <button class="add-to-cart" data-product="3">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://floweraddict.com/wp-content/uploads/2023/10/Mothers-Day-Sweet-Charlotte_Lifestyle1.jpg" alt="Sweet Charlotte">
+                    <h3>Sweet Charlotte</h3>
+                    <div class="ratings">
+                        <span>⭐⭐⭐⭐</span>
+                        <span>(50 reviews)</span>
+                    </div>
+                    <p>$45</p>
+                    <button class="add-to-cart" data-product="4">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const cartButtons = document.querySelectorAll('.add-to-cart');
+        const cartIcon = document.querySelector('.cart-icon');
+        let cartCount = 0;
+
+        cartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                cartCount++;
+                alert('Item added to cart! Total items in cart: ' + cartCount);
+
+                cartIcon.classList.add('clicked');
+                setTimeout(() => {
+                    cartIcon.classList.remove('clicked');
+                }, 500);
+            });
+        });
+    </script>
+</body>
+</html>
