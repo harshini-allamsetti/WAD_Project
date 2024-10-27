@@ -1,0 +1,180 @@
+body {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px; /* Adjust this value as needed */
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header Styling */
+header {
+    background-color: #51c455;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* To position the cart icon absolutely inside the header */
+}
+
+.header-container {
+    display: flex; /* Use flexbox to align logo and nav horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.logo {
+    width: 120px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between logo and nav */
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Align items vertically centered */
+}
+
+nav ul li {
+    margin-right: 50px; /* Space between each navigation item */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px; /* Add padding for better clickable area */
+    display: block; /* Make the link occupy the whole area */
+    color: black; /* Text color */
+    font-size: 24px; /* Adjusted font size */
+}
+
+/* Optional: Add hover effect for navigation links */
+nav ul li a:hover {
+    color: #f4f5f2; /* Change color on hover */
+}
+
+/* Cart Icon */
+.cart-icon {
+    position: absolute; /* Position absolutely within the header */
+    right: 20px; /* Distance from the right edge */
+    top: 50%; /* Align vertically in the center */
+    transform: translateY(-50%); /* Adjust to ensure proper centering */
+    font-size: 1.4em;
+    text-decoration: none;
+    color: rgb(236, 241, 241);
+    transition: transform 0.3s ease; /* Smooth scaling animation on hover */
+}
+
+.cart-icon:hover {
+    transform: scale(1.2); /* The icon will slightly grow in size */
+    color: #423437; /* Optional: change color on hover */
+}
+
+.cart-icon.clicked {
+    animation: bounce 0.5s ease; /* Run bounce animation on click */
+}
+
+/* Cart Icon Click Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Start at the original position */
+    }
+    40% {
+        transform: translateY(-10px); /* Move up slightly */
+    }
+    60% {
+        transform: translateY(-5px); /* Move up slightly less */
+    }
+}
+
+/* Main Styles */
+main {
+    padding: 20px;
+}
+
+.featured-flowers {
+    margin-bottom: 40px;
+}
+
+.flower-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px; /* Space between items */
+    padding: 20px;
+}
+
+.product {
+    position: relative; /* Allows positioning of larger images */
+    overflow: hidden; /* Hides overflow if any */
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(173, 172, 172, 0.966);
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.flower-container .product img {
+    width: 100%; /* Default image size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Adjust text position */
+.product h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.ratings {
+    margin: 5px 0;
+}
+
+.ratings span {
+    margin-right: 5px; /* space between stars and reviews */
+}
+
+.product p {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.add-to-cart {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #347e38; /* Darker green on hover */
+}
+
+/* Roses Section */
+.roses {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.roses img {
+    width: 500px;
+    border-radius: 10px;
+}
+
+.roses p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}

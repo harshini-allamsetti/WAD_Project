@@ -1,0 +1,194 @@
+body {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px; /* Adjust this value as needed */
+  margin: 0;
+  padding: 0;
+  background-color: rgba(116, 193, 244, 0.077); /* Set the background color to peach */
+}
+
+/* Header Container */
+.header-container {
+  display: flex;
+  align-items: center; /* Align items vertically centered */
+  padding: 10px 20px;
+}
+
+/* Logo Styling */
+.logo {
+  width: 100px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Optional spacing between logo and navigation */
+}
+/* Positioning for the Login Icon */
+.login-icon {
+  position: absolute; /* Use absolute positioning */
+  right: 20px; /* Position from the right */
+  top: 15px; /* Position from the top */
+  color: #ea6e85; /* Icon color */
+  text-decoration: none; /* Remove underline */
+}
+
+.login-icon:hover {
+  color: #d35d75; /* Darker shade on hover */
+}
+
+/* Site Title Styling */
+.site-title {
+ 
+  font-size: 24px; /* Adjust font size for the title */
+  color: #333333c2; /* Dark color for the title */
+  margin-right: auto; /* Pushes navigation to the right */
+}
+/* Navigation Styling */
+nav ul {
+  list-style: none; /* Remove bullet points from the list */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Use flexbox to align items horizontally */
+  align-items: center; /* Align items vertically centered */
+}
+
+nav ul li {
+  margin-right: 20px; /* Space between each navigation item */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Remove margin from the last item */
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove underline from links */
+  padding: 10px; /* Add padding for better clickable area */
+  display: block; /* Make the link occupy the whole area */
+  color: black; /* Text color */
+  font-size: 22px; /* Same font size as the body text */
+}
+
+/* Optional: Add hover effect for navigation links */
+nav ul li a:hover {
+  color: #ea6e85; /* Change color on hover */
+}
+
+/* Section and Hero Styling */
+section {
+  padding: 40px;
+}
+
+.hero {
+  background-image: url("https://i.pinimg.com/736x/45/35/e9/4535e9de4e7d28610977e1f53f0f07c6.jpg");
+  background-size: cover;
+  background-position: center; /* Center the image */
+  text-align: center; /* Center text within the section */
+  padding: 50px; /* Add some padding for better spacing */
+  color: #fff; /* Set default text color to white for better contrast with image */
+}
+
+.hero h1 {
+  color: #4d4848; /* Dark peach rosy color */
+  font-size: 48px; /* Increase font size for emphasis */
+  margin-bottom: 20px; /* Add some space after the heading */
+}
+
+.hero p {
+  color: #ea6e85d3; /* Grey color */
+  font-size: 19px; /* Adjust paragraph font size as needed */
+}
+.hero p {
+    margin-bottom: 5px; /* Decrease space between paragraphs */
+    line-height: 0.8; /* Adjust line height if necessary for better spacing */
+  }
+
+
+/* Featured Flowers Section */
+.featured-flowers {
+  text-align: center;
+}
+
+/* Carousel Styling */
+.carousel {
+  overflow: hidden;
+  position: relative;
+  width: 800px; /* Adjust width as needed */
+  height: 400px; /* Adjust height as needed */
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-list {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-list li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.carousel-list img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Carousel Controls */
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.prev-button,
+.next-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Carousel Dots */
+.carousel-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.carousel-dots span,
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel-dots span.active,
+.dot.active {
+  background-color: #333;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #b0aaaa;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+}

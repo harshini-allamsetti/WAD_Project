@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.home-button a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.featured-flowers h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.flower-container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to a new line */
+    justify-content: space-between;
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+.flower-button {
+    flex: 1; /* Make each button take up equal space */
+    margin: 5px;
+    /* ... other styles */
+}
+
+.flower-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Removed unnecessary carousel styles */
+
+.roses {
+    text-align: center;
+}
+
+.roses p {
+    margin-top: 10px;
+}

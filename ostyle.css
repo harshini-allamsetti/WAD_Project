@@ -1,0 +1,167 @@
+/* Reset some default browser styles */
+body {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px; /* Adjust this value as needed */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Navigation Styling */
+header {
+    background-color: #dd7084; /* Light background color for header */
+    padding: 10px 20px; /* Padding for header */
+}
+
+.header-container {
+    display: flex; /* Use flexbox to align logo, nav, and icons horizontally */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between items in the header */
+}
+
+.logo {
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Navigation list styling */
+nav ul {
+    list-style: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Align items vertically centered */
+    gap: 20px; /* Space between each navigation item */
+}
+
+nav ul li {
+    display: inline; /* Make list items inline */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px; /* Add padding for better clickable area */
+    display: block; /* Make the link occupy the whole area */
+    color: black; /* Text color */
+    font-size: 24px; /* Font size for navigation links */
+    outline: none; /* Remove focus outline for links */
+}
+
+/* Optional: Add hover effect for navigation links */
+nav ul li a:hover {
+    color: #fbf9fa; /* Change color on hover */
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+/* Cart Icon */
+.icons {
+    margin-left: auto; /* Push the cart icon to the right */
+}
+
+.cart-icon {
+    font-size: 1.4em;
+    text-decoration: none;
+    color: rgb(236, 241, 241);
+    transition: transform 0.3s ease; /* Smooth scaling animation on hover */
+}
+
+.cart-icon:hover {
+    transform: scale(1.2); /* The icon will slightly grow in size */
+    color: #423437; /* Optional: change color on hover */
+}
+.cart-icon.clicked {
+    animation: bounce 0.5s ease; /* Run bounce animation on click */
+}
+
+
+/* Cart Icon Click Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Start at the original position */
+    }
+    40% {
+        transform: translateY(-10px); /* Move up slightly */
+    }
+    60% {
+        transform: translateY(-5px); /* Move up slightly less */
+    }
+}
+
+/* General styles for the occasion gallery */
+.occasion-gallery {
+    display: grid; /* Use grid layout for the gallery */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Create responsive grid with items of 200px minimum width */
+    gap: 20px; /* Space between items */
+    justify-items: center; /* Center items horizontally within their grid cells */
+    margin: 20px; /* Margin around the gallery */
+}
+
+/* Styling for individual product items */
+.product {
+    position: relative; /* Allows positioning of larger images */
+    overflow: hidden; /* Hides overflow if any */
+    background-color: white; /* Background color for product */
+    border: 1px solid #ddd; /* Border styling */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding inside product */
+    text-align: center; /* Center align text within each product */
+    box-shadow: 0 2px 10px rgba(173, 172, 172, 0.966); /* Shadow effect */
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+/* Hover Effect for Product */
+.product:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Uniform image styling */
+.product img {
+    width: 100%; /* Make the image take the full width of the product container */
+    height: 200px; /* Fixed height to ensure uniformity */
+    object-fit: cover; /* Ensures images fill the container without distortion */
+    border-radius: 5px; /* Optional: rounded corners for images */
+}
+
+/* Styling for the flower buttons */
+.flower-btn {
+    display: block; /* Make the button a block element */
+    margin-top: 10px; /* Add space above the button */
+    padding: 10px; /* Add padding for the button */
+    background-color: #dd7084; /* Background color for the button */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Optional: Add hover effect for buttons */
+.flower-btn:hover {
+    background-color: #913045; /* Darker shade on hover */
+}
+
+/* Main content styling */
+main {
+    padding: 20px; /* Padding for main content */
+}
+.add-to-cart {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #347e38; /* Darker green on hover */
+}
+h2 {
+    color: #333; /* Heading color */
+}
+
+p {
+    font-size: 18px; /* Font size for paragraphs */
+    color: #666; /* Paragraph text color */
+}

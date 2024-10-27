@@ -1,0 +1,159 @@
+/* Reset some default browser styles */
+body {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Soft background for an elegant feel */
+}
+
+/* Header and Navigation Styling */
+header {
+    background-color: rgba(191, 161, 55, 0.774); /* Light pink background for header */
+    padding: 10px 20px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+/* Navigation list styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: #090909;
+    font-size: 24px;
+    outline: none;
+    
+}
+
+nav ul li a:hover {
+    color: #fbf9fa;
+    text-decoration: none;
+}
+
+.icons {
+    margin-left: auto;
+}
+
+.cart-icon {
+    font-size: 1.4em;
+    text-decoration: none;
+    color: #fbf9fa;
+    transition: transform 0.3s ease;
+}
+
+.cart-icon:hover {
+    transform: scale(1.2);
+    color: #423437;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Section for Featured Flowers */
+.featured-flowers {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff; /* White background for a clean look */
+}
+
+.featured-flowers h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color:  rgba(191, 161, 55, 0.774); /* Matching the header's pink theme */
+}
+
+/* Styling for flower products */
+.flower-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+    text-align: center;
+    padding: 15px;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product h3 {
+    font-size: 20px;
+    margin: 15px 0;
+    color: #333;
+}
+
+.product .ratings {
+    font-size: 14px;
+    color: #6c6b6b;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 18px;
+    color: rgba(191, 161, 55, 0.774);
+    margin-bottom: 15px;
+}
+
+.add-to-cart {
+    background-color:  rgba(191, 161, 55, 0.774);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color:rgb(163, 138, 46); 
+}

@@ -1,0 +1,131 @@
+/* Reset some default browser styles */
+body {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px; /* Adjust this value as needed */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header and Navigation Styling */
+header {
+  background-color: rgba(99, 12, 130, 0.567)12, 130, 0.267); /* Light background color for header */
+  padding: 10px 20px; /* Padding for header */
+}
+
+.header-container {
+  display: flex; /* Use flexbox to align logo, nav, and icons horizontally */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between items in the header */
+}
+
+.logo {
+  width: 100px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Navigation list styling */
+nav ul {
+  list-style: none; /* Remove bullet points from the list */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Use flexbox to align items horizontally */
+  align-items: center; /* Align items vertically centered */
+  gap: 20px; /* Space between each navigation item */
+}
+
+nav ul li {
+  display: inline; /* Make list items inline */
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove underline from links */
+  padding: 10px; /* Add padding for better clickable area */
+  display: block; /* Make the link occupy the whole area */
+  color: #090909; /* Text color */
+  font-size: 24px; /* Font size for navigation links */
+  outline: none; /* Remove focus outline for links */
+ 
+}
+
+/* Optional: Add hover effect for navigation links */
+nav ul li a:hover {
+  color: #f358588c; /* Change color on hover */
+  text-decoration: none; /* Ensure no underline on hover */
+}
+/* Cart Icon */
+.icons {
+  margin-left: auto; /* Push the cart icon to the right */
+}
+
+.cart-icon {
+  font-size: 1.4em;
+  text-decoration: none;
+  color: rgba(243, 71, 71, 0.442)
+  transition: transform 0.3s ease; /* Smooth scaling animation on hover */
+}
+
+.cart-icon:hover {
+  transform: scale(1.2); /* The icon will slightly grow in size */
+  color: #423437; /* Optional: change color on hover */
+}
+
+/* Cart Icon Click Animation */
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0); /* Start at the original position */
+  }
+  40% {
+      transform: translateY(-10px); /* Move up slightly */
+  }
+  60% {
+      transform: translateY(-5px); /* Move up slightly less */
+  }
+}
+
+/* Home Button */
+.home-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #0f0f0f;
+}
+
+/* About Us Section */
+.about-us {
+  background-color: #f5f5f5;
+  padding: 50px;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-us-image {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  margin: 0 auto 20px;
+}
+
+.about-us-text {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* General styles for the occasion gallery */
+.occasion-gallery {
+  display: grid; /* Use grid layout for the gallery */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Create responsive grid with items of 200px minimum width */
+  gap: 20px; /* Space between items */
+  justify-items: center; /* Center items horizontally within their grid cells */
+  margin: 20px; /* Margin around the galle
